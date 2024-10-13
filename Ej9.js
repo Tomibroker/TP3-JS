@@ -8,7 +8,7 @@ function loadSavedEmail() {
     const savedEmail = localStorage.getItem('email');
     if (savedEmail) {
         savedEmailDiv.textContent = `Correo guardado: ${savedEmail}`;
-        deleteEmailButton.style.display = 'block'; // Mostrar el botón de eliminar si hay correo guardado
+        deleteEmailButton.style.display = 'block'; // Muestra el botón de eliminar si hay algun correo guardado
     }
 }
 
@@ -18,7 +18,7 @@ function saveEmail(event) {
     if (emailValue) {
         localStorage.setItem('email', emailValue);
         savedEmailDiv.textContent = `Correo guardado: ${emailValue}`;
-        deleteEmailButton.style.display = 'block'; // Mostrar el botón de eliminar
+        deleteEmailButton.style.display = 'block'; // Muestra el botón de eliminar
     }
 }
 
